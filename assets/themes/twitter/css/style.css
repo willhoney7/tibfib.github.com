@@ -37,6 +37,13 @@ html, body {
 }
 
 
+.footer-left {
+	float: left;
+}
+.footer-right {
+	float: right;
+}
+
 /* tag_box ======================================================== */
 
 .tag_box {

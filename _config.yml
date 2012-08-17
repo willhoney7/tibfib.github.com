@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
@@ -13,7 +13,7 @@ title : Tibfib.com
 tagline:
 author :
   name : Will Honey
-  email : contact@tibfib.com
+  email : will@tibfib.com
   github : Tibfib
   twitter : Tibfib
   feedburner : feedname
@@ -79,18 +79,18 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : false
     disqus :
-      short_name : jekyllbootstrap
+      short_name : 
     livefyre :
-      site_id : 123
+      site_id : 
     intensedebate :
-      account : 123abc
+      account : 
     facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+      appid : 
+      num_posts: 
+      width: 
+      colorscheme: 
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
