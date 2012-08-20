@@ -19,7 +19,7 @@ tagline:
 </div>
 
 <div class="contact-list span4">
-	<h4>More</h4>
+	<h1 class="muted">More</h1>
 	<a class="well-project" href="mailto:{{ site.author.email }}" target="_blank">
 		<div class="well well-small">
 			<img class="social-icon" src="{{ ASSET_PATH }}tibfib/images/email.png" /><span class="more-label"><strong>Email</strong> <span class="muted">at will@tibfib.com</span></span>

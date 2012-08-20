@@ -16,6 +16,10 @@ h6 {
 	margin-top: 0px;
 }
 
+h1.muted {
+	margin-bottom: 10px;
+}
+
 .page-header {
 	margin-bottom: 15px;
 	margin-top: 10px;
@@ -23,6 +27,22 @@ h6 {
 
 .navbar .nav {
 	margin: 0px;
+}
+.navbar .brand:hover {
+	color: #333;
+/*	text-shadow: 0px 0px 50px #0088CC;*/
+	text-decoration: none;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  text-shadow: 0px 0px 10px #0088CC;
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav .active > a:focus {
+  text-shadow: none;
 }
 
 .social-icon {
@@ -34,9 +54,14 @@ h6 {
 }
 .social-icon:hover {
 	border-color:#0088cc;
-	-webkit-box-shadow:0 1px 4px rgba(0,105,214,1);
-	-moz-box-shadow:0 1px 4px rgba(0,105,214,1);
-	box-shadow:0 1px 4px rgba(0,105,214,1);
+	-webkit-box-shadow:0 0px 4px rgba(0,105,214,1);
+	-moz-box-shadow:0 0px 4px rgba(0,105,214,1);
+	box-shadow:0 0px 4px rgba(0,105,214,1);
+}
+
+
+.date {
+	color: #999999;
 }
 
 .project {
@@ -47,13 +72,11 @@ h6 {
 	margin-bottom: 20px;
 	display:block;
 	padding:4px;
-	border:4px solid #ddd;
+	border:2px solid #ddd;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
-	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.075);
-	-moz-box-shadow:0 1px 1px rgba(0,0,0,0.075);
-	box-shadow:0 1px 1px rgba(0,0,0,0.075);
+	
 }
 .project.koto {
 	background-image: url("../images/koto_background.png");
@@ -64,15 +87,12 @@ h6 {
 	background-color: rgb(51,51,51);
 }
 
-.date {
-	color: #999999;
-}
-
 a.project:hover {
 	border-color:#0088cc;
-	-webkit-box-shadow:0 1px 4px rgba(0,105,214,0.25);
-	-moz-box-shadow:0 1px 4px rgba(0,105,214,0.25);
-	box-shadow:0 1px 4px rgba(0,105,214,0.25);
+
+	-webkit-box-shadow:0 0px 4px rgba(0,105,214,1);
+	-moz-box-shadow:0 0px 4px rgba(0,105,214,1);
+	box-shadow:0 0px 4px rgba(0,105,214,1);
 }
 
 blockquote p {
@@ -81,7 +101,8 @@ blockquote p {
 
 blockquote:hover {
 	border-color: #0088cc;
-} 
+}
+
 .navbar-inner {
 	border-bottom-color: #0088cc;
 }
@@ -140,7 +161,10 @@ blockquote:hover {
 	text-decoration: none;
 }
 .well-project .well:hover {
-	border-color:#0088cc;
+	/*border-color:#0088cc;*/
+	-webkit-box-shadow:0 0px 4px rgba(0,105,214,1);
+	-moz-box-shadow:0 0px 4px rgba(0,105,214,1);
+	box-shadow:0 0px 4px rgba(0,105,214,1);
 }
 .well-project-icon {
 	width: 70px;

@@ -8,7 +8,6 @@ tagline:
 <div class="row-fluid">
 		
 	<div class="span8">
-
 		{% for post in site.posts %}
 			<blockquote>
 				<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -19,8 +18,7 @@ tagline:
 	  
 	</div><!--/span-->
 	<div class="span4">
-		<h4>Projects</h4>
-
+		<h1 class="muted">Projects</h1>
 			{% for page in site.pages %}
 			  	{% if page.project %}
 			  	<a class="project {{ page.class }}" href="{{ BASE_PATH }}{{ page.url }}">
