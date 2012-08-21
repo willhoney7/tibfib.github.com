@@ -41,8 +41,8 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 	<div class="span6">
 		<ul class="thumbnails">
 			<li>
-		    	<a href="#" class="thumbnail">
-		    		<img src="http://tibfib.com/wp-content/uploads/item-view.png" alt="" title="Article View" />
+		    	<a href="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_1.png" class="thumbnail" target="_blank">
+		    		<img src="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_1.png" alt="" title="Article View" />
 		    	</a>
 			</li>
 		</ul>
@@ -52,18 +52,18 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 
 <ul class="thumbnails">
 	<li class="span4">
-    	<a href="#" class="thumbnail">
-    		<img src="http://tibfib.com/wp-content/uploads/itemcards.png" alt="" title="Article Cards" />
+    	<a href="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_2.png" class="thumbnail" target="_blank">
+    		<img src="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_2.png" alt="" title="Article Cards" />
     	</a>
 	</li>
 	<li class="span4">
-    	<a href="#" class="thumbnail">
-    		<img src="http://tibfib.com/wp-content/uploads/Welcome-to-NomNomNom.png" alt="" title="Welcome to NomNomNom!" />
+    	<a href="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_3.png" class="thumbnail" target="_blank">
+    		<img src="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_3.png" alt="" title="Welcome to NomNomNom!" />
     	</a>
 	</li>
 	<li class="span4">
-    	<a href="#" class="thumbnail">
-    		<img src="http://tibfib.com/wp-content/uploads/small-scroller.png" alt="" title="Feed Scroller" />
+    	<a href="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_4.png" class="thumbnail" target="_blank">
+    		<img src="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_4.png" alt="" title="Feed Scroller" />
     	</a>
 	</li>
 </ul>

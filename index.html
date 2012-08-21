@@ -10,8 +10,9 @@ tagline:
 	<div class="span8">
 		{% for post in paginator.posts %}
 			<blockquote>
-				<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-				<h6 class="date">{{ post.date | date_to_string}}</h6>
+				<div class="page-header">
+					<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%B %d, %Y" }}</small></h1>
+				</div>
 				<p>{{ post.content }}</p>
 			</blockquote>
 		{% endfor %}

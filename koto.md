@@ -44,8 +44,8 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 	<div class="span4">
 		<ul class="thumbnails pull-right">
 			<li>
-		    	<a href="#" class="thumbnail">
-					<img src="http://www.kotoplayer.com/screenshots/koto_3.png" alt="Koto Screenshot" />
+		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" target="_blank" class="thumbnail">
+					<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" alt="Koto Screenshot" />
 		    	</a>
 			</li>
 		</ul>
@@ -54,18 +54,18 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 
 <ul class="thumbnails">
 	<li class="span4">
-    	<a href="#" class="thumbnail">
-    		<img src="http://tibfib.com/wp-content/uploads/itemcards.png" alt="" title="Article Cards" />
+    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" target="_blank" class="thumbnail">
+    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" alt="" title="Koto Screenshot" />
     	</a>
 	</li>
 	<li class="span4">
-    	<a href="#" class="thumbnail">
-    		<img src="http://tibfib.com/wp-content/uploads/Welcome-to-NomNomNom.png" alt="" title="Welcome to NomNomNom!" />
+    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" target="_blank" class="thumbnail">
+    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" alt="" title="Koto Screenshot" />
     	</a>
 	</li>
 	<li class="span4">
-    	<a href="#" class="thumbnail">
-    		<img src="http://tibfib.com/wp-content/uploads/small-scroller.png" alt="" title="Feed Scroller" />
+    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" target="_blank" class="thumbnail">
+    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" alt="" title="Koto Screenshot" />
     	</a>
 	</li>
 </ul>

@@ -769,7 +769,7 @@ blockquote p {
   line-height: 25px;
 }
 
-blockquote small {
+/*blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
@@ -777,7 +777,7 @@ blockquote small {
 
 blockquote small:before {
   content: '\2014 \00A0';
-}
+}*/
 
 blockquote.pull-right {
   float: right;

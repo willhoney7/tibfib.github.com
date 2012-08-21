@@ -1,10 +1,30 @@
 ---
 layout: page
 title : Archive
-header : Post Archive
 group: navigation
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+{% for post in site.posts %}
+	{% unless post.next %}
+		<h3>{{ post.date | date: '%Y' }}</h3>
+	{% else %}
+
+	    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+	    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+
+	    {% if year != nyear %}
+	    	<h3>{{ post.date | date: '%Y' }}</h3>
+	    {% endif %}
+
+	{% endunless %}
+  	
+  	<a class="well-project" href="{{ BASE_PATH }}{{ post.url }}">
+		<div class="well well-small">
+    		{{ post.date | date: "%B %d"}} - <strong>{{ post.title}}</strong>
+    	</div>
+	</a>
+
+{% endfor %}
+
+<!-- Thanks http://mikerowecode.com/2010/08/jekyll_archives_grouped_by_year.html -->

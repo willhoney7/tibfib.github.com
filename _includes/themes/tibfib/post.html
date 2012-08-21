@@ -2,7 +2,7 @@
   <div class="span8">
 
     <div class="page-header">
-      <h1>{{ page.title }} <small>{{ page.date | date_to_long_string }}</small></h1>
+      <h1>{{ page.title }} <small>{{ page.date | date: "%B %d, %Y" }}</small></h1>
     </div>
 
     {{ content }}
@@ -17,7 +17,7 @@
       	<li>
           	<a class="well-project" href="{{ BASE_PATH }}{{ post.url }}">
         		<div class="well well-small">
-	        		<strong>{{ post.title}}</strong> <span class="muted">{{ post.date | date_to_string}}</span>
+	        		<strong>{{ post.title}}</strong> <span class="muted">{{ post.date | date: "%B %d, %Y" }}</span>
 	        	</div>
      	 	</a>
         </li>
