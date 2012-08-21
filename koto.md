@@ -32,10 +32,10 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 		<li>Resume Now Playing</li>
 		<li>Playlist Recovery. Every accidentally play a song and get rid of the list of songs you've been listening to for a while? In Koto Player, you can use the app menu to recover your last list of playing songs.</li>
 				
-		<a class="btn btn-large btn-primary download-button" href="http://developer.palm.com/appredirect/?packageid=com.tibfib.app.koto" target="_blank">
+		<a class="btn btn-large btn-primary big-button" href="http://developer.palm.com/appredirect/?packageid=com.tibfib.app.koto" target="_blank">
 			Download Now
 		</a>
-		<a class="btn btn-large btn-info download-button" href="http://twitter.com/koto_player" target="_blank">
+		<a class="btn btn-large btn-info big-button" href="http://twitter.com/koto_player" target="_blank">
 			Follow @Koto_Player
 		</a>
 			

@@ -1,3 +1,7 @@
+/*
+	Core
+*/
+
 body {
 	padding-top: 100px;
 	padding-bottom: 20px;
@@ -7,9 +11,7 @@ h1,h2 {
 	margin-bottom: 0px;
 }
 h1 a,
-h1 a:hover,
-a.noStyle,
-a.noStyle:hover {
+h1 a:hover {
 	color: rgb(51, 51, 51);
 }
 h6 {
@@ -19,6 +21,26 @@ h6 {
 h1.muted {
 	margin-bottom: 10px;
 }
+
+blockquote p {
+	font-size: 14px;
+}
+
+blockquote:hover {
+	border-color: #0088cc;
+}
+
+/* 
+	Helpers
+*/
+
+.pad-right {
+	padding-right: 9px;
+}
+
+/* 
+	Header 
+*/
 
 .page-header {
 	margin-bottom: 15px;
@@ -42,8 +64,24 @@ h1.muted {
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover,
 .navbar .nav .active > a:focus {
-  text-shadow: none;
+	text-shadow: none;
+	color: #333;
+	background-color: rgba(0, 136, 204, .1);
 }
+
+.navbar-inner {
+	border-bottom-color: #0088cc;
+}
+
+.navbar-fixed-top .navbar-inner {
+	-webkit-box-shadow: 0 1px 10px rgba(0, 136, 204, .3);
+	-moz-box-shadow: 0 1px 10px rgba(0, 136, 204, .3);
+	box-shadow: 0 1px 10px rgba(0, 136, 204, .3);
+}
+
+/* 
+	Footer
+*/
 
 .social-icon {
 	width: 30px;
@@ -59,13 +97,11 @@ h1.muted {
 	box-shadow:0 0px 4px rgba(0,105,214,1);
 }
 
+/*
+	Custom Block Unit
+*/
 
-.date {
-	color: #999999;
-	font-size: 85%;
-}
-
-.project {
+.block-project {
 	position: relative;
 	height: 150px;
  	background-size: 100%;
@@ -79,16 +115,16 @@ h1.muted {
 	border-radius:4px;
 	
 }
-.project.koto {
+.block-project.koto {
 	background-image: url("../images/koto_background.png");
 	background-color: rgb(23,123,183);
 }
-.project.nomnomnom {
+.block-project.nomnomnom {
 	background-image: url("../images/nomnomnom_background.png");
 	background-color: rgb(51,51,51);
 }
 
-a.project:hover {
+a.block-project:hover {
 	border-color:#0088cc;
 
 	-webkit-box-shadow:0 0px 4px rgba(0,105,214,1);
@@ -96,30 +132,7 @@ a.project:hover {
 	box-shadow:0 0px 4px rgba(0,105,214,1);
 }
 
-blockquote p {
-	font-size: 14px;
-}
-
-blockquote:hover {
-	border-color: #0088cc;
-}
-
-.navbar-inner {
-	border-bottom-color: #0088cc;
-}
-.navbar-fixed-top .navbar-inner {
-	-webkit-box-shadow: 0 1px 10px rgba(0, 136, 204, .3);
-	-moz-box-shadow: 0 1px 10px rgba(0, 136, 204, .3);
-	box-shadow: 0 1px 10px rgba(0, 136, 204, .3);
-}
-
-.navbar .nav .active > a,
-.navbar .nav .active > a:hover,
-.navbar .nav .active > a:focus {
-  background-color: rgba(0, 136, 204, .1);
-}
-
-.project-icon {
+.block-project .block-project-icon {
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -130,7 +143,7 @@ blockquote:hover {
 	max-height: 55%;
 }
 
-.project-text {
+.block-project .block-project-text {
 	position: absolute;
 	bottom: 0;
 	height: 20px;
@@ -149,49 +162,53 @@ blockquote:hover {
 	border-bottom-left-radius: 4px;
 }
 
-.well-project h2 {
+/* 
+	Standard Block Unit, uses a well
+*/
+
+.block h2 {
 	margin-top: 0px;
 }
-.well-project.well-contribution h2{
+.block.block-small h2{
 	margin-top: 10px;
 }
+.block.block-small .well {
+	padding-top: 0px;
+}
 
-.well-project,
-.well-project:hover {
+.block,
+.block:hover {
 	color: rgb(51,51,51);
 	text-decoration: none;
 }
-.well-project .well:hover {
+
+.block .well:hover {
 	/*border-color:#0088cc;*/
 	-webkit-box-shadow:0 0px 4px rgba(0,105,214,1);
 	-moz-box-shadow:0 0px 4px rgba(0,105,214,1);
 	box-shadow:0 0px 4px rgba(0,105,214,1);
 }
-.well-project-icon {
+.block .block-icon {
 	width: 70px;
 	height: 70px;
 	padding-right: 19px;
 }
-.well-contribution .well {
-	padding-top: 0px;
-}
 
-.contact-list .well,
 .well.well-small {
 	margin-bottom: 10px;
 }
 
-.pad-right {
-	padding-right: 9px;
-}
-
-.more-label {
+.block .more-label {
 	padding-left: 9px;
 	position: relative;
 	top: 3px;
 }
 
-.download-button {
+/*
+	Page and Post Helpers
+*/
+
+.big-button {
 	font-size: 28px;
 	font-weight: 400;
 	margin-top: 10px;

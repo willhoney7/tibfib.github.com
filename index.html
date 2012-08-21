@@ -48,9 +48,9 @@ tagline:
 		<h1 class="muted">Projects</h1>
 			{% for page in site.pages %}
 			  	{% if page.project %}
-			  	<a class="project {{ page.class }}" href="{{ BASE_PATH }}{{ page.url }}">
-					<img class='project-icon' src='{{ ASSET_PATH }}{{ page.icon }}'/>
-					<div class='project-text' >
+			  	<a class="block-project {{ page.class }}" href="{{ BASE_PATH }}{{ page.url }}">
+					<img class='block-project-icon' src='{{ ASSET_PATH }}{{ page.icon }}'/>
+					<div class='block-project-text' >
 						{{ page.title}}
 					</div>
 				</a>  

@@ -32,7 +32,7 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 		<li>Named by the illustrious Rod Whitby of WebOS Internals</li>
 		<li> ...and much more!</li>
 		
-		<a class="btn btn-large btn-primary download-button" href="http://developer.palm.com/appredirect/?packageid=com.tibfib.app.nomnomnom" target="_blank">
+		<a class="btn btn-large btn-primary big-button" href="http://developer.palm.com/appredirect/?packageid=com.tibfib.app.nomnomnom" target="_blank">
 			Download Now
 		</a>
 			
@@ -70,7 +70,7 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 
 <!--<img title="NomNomNom Icon" src="http://tibfib.com/wp-content/uploads/icon256.png" alt="NomNomNom Icon" height="195" />-->
 
-<div class="well-project well-contribution">
+<div class="block block-small">
 	<div class="well well-small">
 		<div data-toggle="collapse" data-target="#changelog">
 			<h2>Changelog</h2>
