@@ -72,7 +72,7 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 
 <div class="block block-small">
 	<div class="well well-small">
-		<div data-toggle="collapse" data-target="#changelog">
+		<a class = "noLinkStyles" href="#" data-toggle="collapse" data-target="#changelog">
 			<h2>Changelog</h2>
 			<div class="collapse out" id="changelog">
 				<h5>v0.10.2</h5>
@@ -93,6 +93,6 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 				<li>Fix vertical scrolling when in quick switch mode</li>
 				<li>Fix mis-alignment of rows of feeds</li>
 			</div>
-		</div>
+		</a>
 	</div>
 </div>
