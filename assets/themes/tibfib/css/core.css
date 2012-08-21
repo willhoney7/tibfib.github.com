@@ -220,3 +220,7 @@ a.block-project:hover {
 	font-weight: 400;
 	margin-top: 10px;
 }
+
+.pull-right-remove-phone {
+	float: right;
+}

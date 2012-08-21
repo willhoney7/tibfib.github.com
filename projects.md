@@ -9,13 +9,13 @@ tagline:
   	{% if page.project %}
 <a class="block" href="{{ BASE_PATH }}{{ page.url }}">
 	<div class="well">
-			<div class="pull-left">
-				<img class="block-icon" src='{{ ASSET_PATH }}{{ page.icon }}'/>
-			</div>
-			<div >
-				<h2>{{ page.title }} <small>{{ page.tagline }}</small></h2>
-				<p>{{ page.description }}</p>
-			</div>
+		<div class="hidden-phone pull-left">
+			<img class="block-icon" src='{{ ASSET_PATH }}{{ page.icon }}'/>
+		</div>
+		<div >
+			<h2>{{ page.title }} <small>{{ page.tagline }}</small></h2>
+			<p>{{ page.description }}</p>
+		</div>
 	</div>
 </a>
 	{% endif %}

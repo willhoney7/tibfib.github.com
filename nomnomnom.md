@@ -39,7 +39,7 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 	</div>
 
 	<div class="span6">
-		<ul class="thumbnails">
+		<ul class="thumbnails right-thumbnail">
 			<li>
 		    	<a href="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_1.png" class="thumbnail" target="_blank">
 		    		<img src="{{ ASSET_PATH }}tibfib/images/nomnomnom_screenshot_1.png" alt="" title="Article View" />

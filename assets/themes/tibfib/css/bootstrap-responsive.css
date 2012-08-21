@@ -856,9 +856,16 @@
   .modal.fade.in {
     top: auto;
   }
+  /* CUSTOM */
   blockquote {      
     border-width: 0px;      
     padding: 0px;     
+  }
+  .pull-right-remove-phone {
+    float: none;
+  }
+  .right-thumbnail {
+    margin-top: 30px;
   }
 }
 

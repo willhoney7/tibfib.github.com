@@ -42,7 +42,7 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 	</div>
 
 	<div class="span4">
-		<ul class="thumbnails pull-right">
+		<ul class="thumbnails pull-right-remove-phone right-thumbnail">
 			<li>
 		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" target="_blank" class="thumbnail">
 					<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" alt="Koto Screenshot" />
