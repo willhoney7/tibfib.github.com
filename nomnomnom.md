@@ -74,25 +74,25 @@ NomNomNom is an app for the HP Touchpad made to work and sync with Google Reader
 	<div class="well well-small">
 		<div data-toggle="collapse" data-target="#changelog">
 			<h2>Changelog</h2>
-		</div>
-		<div class="collapse out" id="changelog">
-			<h5>v0.10.2</h5>
-			<li>Get full content of an article!</li>
-			<li>Swipe left/right on article items to star/mark unread</li>
-			<li>Mark articles as read/unread</li>
-			<li>Major Performance updates!</li>
-			<li>Bug Fixes</li>
-			<h5>v0.9.0</h5>
-			<li>Option for vertical preview list</li>
-			<li>Advanced image handling</li>
-			<li>Mark all as read button while viewing a feed</li>
-			<li>Bug Fixes</li>
-			<h5>v0.8.5</h5><li>Instapaper support!</li>
-			<li>Read it later support!</li>
-			<li>Turned automatically marking feeds as read into an option</li>
-			<li>Fix sharing via SMS/email/spaz</li>
-			<li>Fix vertical scrolling when in quick switch mode</li>
-			<li>Fix mis-alignment of rows of feeds</li>
+			<div class="collapse out" id="changelog">
+				<h5>v0.10.2</h5>
+				<li>Get full content of an article!</li>
+				<li>Swipe left/right on article items to star/mark unread</li>
+				<li>Mark articles as read/unread</li>
+				<li>Major Performance updates!</li>
+				<li>Bug Fixes</li>
+				<h5>v0.9.0</h5>
+				<li>Option for vertical preview list</li>
+				<li>Advanced image handling</li>
+				<li>Mark all as read button while viewing a feed</li>
+				<li>Bug Fixes</li>
+				<h5>v0.8.5</h5><li>Instapaper support!</li>
+				<li>Read it later support!</li>
+				<li>Turned automatically marking feeds as read into an option</li>
+				<li>Fix sharing via SMS/email/spaz</li>
+				<li>Fix vertical scrolling when in quick switch mode</li>
+				<li>Fix mis-alignment of rows of feeds</li>
+			</div>
 		</div>
 	</div>
 </div>
