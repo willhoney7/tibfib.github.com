@@ -6,6 +6,7 @@ description: A clean, beautiful, open-source Music Player for webOS phones.
 class: koto
 icon: tibfib/images/koto_icon.png
 project: true
+github: http://github.com/Tibfib/Koto-Player/
 ---
 {% include JB/setup %}
 
