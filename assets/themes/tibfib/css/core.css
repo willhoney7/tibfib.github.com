@@ -188,3 +188,9 @@ blockquote:hover {
 	position: relative;
 	top: 3px;
 }
+
+.download-button {
+	font-size: 28px;
+	font-weight: 400;
+	margin-top: 10px;
+}

@@ -8,7 +8,7 @@ tagline:
 <div class="row-fluid">
 		
 	<div class="span8">
-		{% for post in site.posts %}
+		{% for post in paginator.posts %}
 			<blockquote>
 				<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
 				<h6 class="date">{{ post.date | date_to_string}}</h6>
@@ -16,7 +16,33 @@ tagline:
 			</blockquote>
 		{% endfor %}
 	  
-	</div><!--/span-->
+		<ul class="pager">
+			{% if paginator.previous_page %}
+			  	<li class="previous">
+			  		{% if paginator.previous_page == 1 %}
+			    		<a href="/">&larr; Newer</a>
+			    	{% else %}
+			    		<a href="/page{{paginator.previous_page}}">&larr; Newer</a>
+			   		{% endif %}
+			  	</li>
+			{% else %}
+				<li class="previous disabled">
+				    <a href="#">&larr; Newer</a>
+				</li>
+			{% endif %}
+
+			{% if paginator.next_page %}
+				<li class="next">
+			    	<a href="/page{{paginator.next_page}}">Older &rarr;</a>
+			  	</li>
+			{% else %}
+			  <li class="next disabled">
+			   <a href="#">Older &rarr;</a>
+			  </li>
+			{% endif %}	   
+		</ul>
+	</div>
+
 	<div class="span4">
 		<h1 class="muted">Projects</h1>
 			{% for page in site.pages %}
@@ -31,12 +57,5 @@ tagline:
 			{% endfor %}
 			
     </div><!--/span-->
+
 </div><!--/row-->
-
-<!--This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-	$ rm -rf _posts/core-samples
-
-Here's a sample "posts list".-->
-

@@ -1,21 +1,32 @@
 <div class="row">
   <div class="span8">
-    <h1>{{ page.title }}</h1>
-    <h6 class="date">{{ page.date | date_to_long_string }}</h6>
+
+    <div class="page-header">
+      <h1>{{ page.title }} <small>{{ page.date | date_to_long_string }}</small></h1>
+    </div>
 
     {{ content }}
 
    {% include JB/comments %}
   </div>
   
-  <div class="span4">
+  <div class="contact-list span4">
     <h1 class="muted">Recent Posts</h1>
-    <ul class="nav nav-tabs nav-stacked">
-      {% for post in site.posts %}
-        <li>
-           <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}<span class="date"> {{ post.date | date_to_string}}</span></a>
+    <ul class="nav">
+      {% for post in site.posts limit:10 %}
+      	<li>
+          	<a class="well-project" href="{{ BASE_PATH }}{{ post.url }}">
+        		<div class="well well-small">
+	        		<strong>{{ post.title}}</strong> <span class="muted">{{ post.date | date_to_string}}</span>
+	        	</div>
+     	 	</a>
         </li>
       {% endfor %}
     </ul>
+    <ul class="pager">
+	  <li class="next">
+	    <a href="/archive.html">Archive &rarr;</a>
+	  </li>
+	</ul>
   </div>
 </div>

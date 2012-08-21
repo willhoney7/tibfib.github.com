@@ -806,6 +806,7 @@
   }
   .thumbnails > li {
     float: none;
+    margin: 10px 0px 0px 0px;
   }
   [class*="span"],
   .row-fluid [class*="span"] {
