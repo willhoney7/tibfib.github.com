@@ -29,7 +29,7 @@ tagline:
   	{% if page.contribution %}
 <div class="block block-small">
 	<div class="well well-small">
-		<a href="#" class="noLinkStyles" data-toggle="collapse" data-target="#{{ page.id }}">
+		<a class="noLinkStyles" data-toggle="collapse" data-target="#{{ page.id }}">
 			<h2>{{ page.title }} <small>{{ page.tagline }}</small></h2>
 		</a>
 		<div class="collapse out" id="{{ page.id }}">{{ page.content }}</div>
