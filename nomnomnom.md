@@ -31,9 +31,11 @@ NomNomNom is a defunct app for the HP Touchpad made to work and sync with Google
 		<li>Named by the illustrious Rod Whitby of WebOS Internals</li>
 		<li> ...and much more!</li>
 		
-		<a class="btn btn-large btn-primary big-button" href="{{ page.github }}" target="_blank">
-			Download Now (via Github)
-		</a>
+		<div class="big-button-container" >
+			<a class="btn btn-large btn-primary big-button" href="{{ page.github }}" target="_blank">
+				Download Now (via Github)
+			</a>
+		</div>
 			
 	</div>
 

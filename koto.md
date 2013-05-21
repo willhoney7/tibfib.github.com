@@ -32,42 +32,41 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 		<li>Apply Custom Artwork from Google Image Search Results</li>
 		<li>Resume Now Playing</li>
 		<li>Playlist Recovery. Every accidentally play a song and get rid of the list of songs you've been listening to for a while? In Koto Player, you can use the app menu to recover your last list of playing songs.</li>
-				
-		<a class="btn btn-large btn-primary big-button" href="http://developer.palm.com/appredirect/?packageid=com.tibfib.app.koto" target="_blank">
-			Download Now
-		</a>
-		<a class="btn btn-large btn-info big-button" href="http://twitter.com/koto_player" target="_blank">
-			Follow @Koto_Player
-		</a>
+		
+		<div class="big-button-container">		
+			<a class="btn btn-large btn-primary big-button" href="http://developer.palm.com/appredirect/?packageid=com.tibfib.app.koto" target="_blank">
+				Download Now
+			</a>
+		</div>
 			
 	</div>
-
 	<div class="span4">
-		<ul class="thumbnails pull-right-remove-phone right-thumbnail">
-			<li>
-		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" target="_blank" class="thumbnail">
+		<ul class="thumbnails">
+			<li class="span3">
+				<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" target="_blank" class="thumbnail">
 					<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" alt="Koto Screenshot" />
+			    </a>
+		    </li>
+			<li class="span1">
+		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" target="_blank" class="thumbnail">
+		    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" alt="" title="Koto Screenshot" />
+		    	</a>
+			</li>
+			<li class="span1">
+		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" target="_blank" class="thumbnail">
+		    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" alt="" title="Koto Screenshot" />
+		    	</a>
+			</li>
+			<li class="span1">
+		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" target="_blank" class="thumbnail">
+		    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" alt="" title="Koto Screenshot" />
 		    	</a>
 			</li>
 		</ul>
 	</div>
+	
+
 </div>
 
-<ul class="thumbnails">
-	<li class="span4">
-    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" target="_blank" class="thumbnail">
-    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" alt="" title="Koto Screenshot" />
-    	</a>
-	</li>
-	<li class="span4">
-    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" target="_blank" class="thumbnail">
-    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" alt="" title="Koto Screenshot" />
-    	</a>
-	</li>
-	<li class="span4">
-    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" target="_blank" class="thumbnail">
-    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" alt="" title="Koto Screenshot" />
-    	</a>
-	</li>
-</ul>
+
 

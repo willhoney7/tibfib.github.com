@@ -66,8 +66,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
-  #/Users/Will/Development/Websites/tibfib.com/src/assets/themes/tibfib
+  ASSET_PATH : false #/Users/Will/Development/Websites/tibfib.com/src/assets/themes/tibfib
   #false
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.

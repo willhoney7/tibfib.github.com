@@ -867,6 +867,10 @@
   .right-thumbnail {
     margin-top: 30px;
   }
+
+  .big-button-container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -909,6 +913,7 @@
   .carousel-caption {
     position: static;
   }
+
 }
 
 @media (max-width: 979px) {
