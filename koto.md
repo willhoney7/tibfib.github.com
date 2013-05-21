@@ -16,8 +16,8 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 
 	<div class="span8">
 		<h3>Features:</h3>
-		<li>Just Type is FULLY supported. Start typing to search through all your songs, artists, albums, playlists.</li>
-		<li>In-app Search! Forward Swipe to access</li>
+		<li>Just Type! Start typing to search through all your songs, artists, albums, and playlists.</li>
+		<li>In-app Search! Just forward swipe.</li>
 		<li>Control your music from nearly every scene.</li>
 		<li>Easy to use Song Scrubber (music progress bar)</li>
 		<li>Album Art "Card View", a preview mode for your current playlist</li>
