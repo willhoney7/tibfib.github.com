@@ -3,7 +3,6 @@ layout: default
 title: Blog
 tagline:
 ---
-{% include JB/setup %}
 
 <div class="row-fluid">
 		
@@ -49,14 +48,18 @@ tagline:
 			{% for page in site.pages %}
 			  	{% if page.project %}
 			  	<a class="block-project {{ page.class }}" href="{{ BASE_PATH }}{{ page.url }}">
-					<img class='block-project-icon' src='{{ ASSET_PATH }}{{ page.icon }}'/>
+					<img class='block-project-icon' src='{{ site.ASSET_PATH }}{{ page.icon }}'/>
 					<div class='block-project-text' >
 						{{ page.title}}
 					</div>
 				</a>  
 				{% endif %}
 			{% endfor %}
-			
+		<ul class="pager">
+			<li class="next">
+				<a href="{{ site.BASE_PATH }}projects.html">Projects &rarr;</a>
+			</li>
+		</ul>	
     </div><!--/span-->
 
 </div><!--/row-->

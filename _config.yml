@@ -3,8 +3,7 @@
 permalink: /:categories/:year/:month/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
-pygments: true
+highlighter: true
 paginate: 5
 
 # Themes are encouraged to use these universal variables 
@@ -18,6 +17,10 @@ author :
   github : Tibfib
   twitter : Tibfib
   feedburner :
+
+#BASE_PATH : "/"
+HOME_PATH : "/"
+ASSET_PATH : /assets/
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -66,7 +69,8 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false #/Users/Will/Development/Websites/tibfib.com/src/assets/themes/tibfib
+  ASSET_PATH : /assets/themes/tibfib
+  #/Users/Will/Development/Websites/tibfib.com/src/assets/themes/tibfib
   #false
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.

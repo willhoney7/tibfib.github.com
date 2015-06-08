@@ -31,6 +31,10 @@ blockquote:hover {
 	border-color: #0088cc;
 }
 
+.muted > a {
+	color: #999;
+}
+
 /* 
 	Helpers
 */
@@ -123,11 +127,11 @@ a.noLinkStyles.hover {
 	
 }
 .block-project.koto {
-	background-image: url("../images/koto_background.png");
+	background-image: url("../images/koto/koto_background.png");
 	background-color: rgb(23,123,183);
 }
 .block-project.nomnomnom {
-	background-image: url("../images/nomnomnom_background.png");
+	background-image: url("../images/nomnomnom/nomnomnom_background.png");
 	background-color: rgb(51,51,51);
 }
 

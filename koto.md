@@ -4,11 +4,10 @@ title: Koto Player
 tagline: for webOS
 description: A clean, beautiful, open-source Music Player for webOS phones.
 class: koto
-icon: tibfib/images/koto_icon.png
+icon: images/koto/koto_icon.png
 project: true
 github: http://github.com/Tibfib/Koto-Player/
 ---
-{% include JB/setup %}
 
 Koto Player has a gorgeous user interface, crafted to provide an enjoyable music listening experience. Built for webOS phones such as the Palm Pre 2, Pre 3, and HP Veer, Koto leverages the power of webOS 2.0. Koto had a 5-star rating in the HP App Catalog. While it is no longer available there, it is available on <a href="{{ page.github }}">Github</a> and is open-source for anyone to contribute.
 
@@ -43,23 +42,23 @@ Koto Player has a gorgeous user interface, crafted to provide an enjoyable music
 	<div class="span4">
 		<ul class="thumbnails">
 			<li class="span3">
-				<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" target="_blank" class="thumbnail">
-					<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_1.png" alt="Koto Screenshot" />
+				<a href="{{ site.ASSET_PATH }}images/koto/koto_screenshot_1.png" target="_blank" class="thumbnail">
+					<img src="{{ site.ASSET_PATH }}images/koto/koto_screenshot_1.png" alt="Koto Screenshot" />
 			    </a>
 		    </li>
 			<li class="span1">
-		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" target="_blank" class="thumbnail">
-		    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_2.png" alt="" title="Koto Screenshot" />
+		    	<a href="{{ site.ASSET_PATH }}images/koto/koto_screenshot_2.png" target="_blank" class="thumbnail">
+		    		<img src="{{ site.ASSET_PATH }}images/koto/koto_screenshot_2.png" alt="" title="Koto Screenshot" />
 		    	</a>
 			</li>
 			<li class="span1">
-		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" target="_blank" class="thumbnail">
-		    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_3.png" alt="" title="Koto Screenshot" />
+		    	<a href="{{ site.ASSET_PATH }}images/koto/koto_screenshot_3.png" target="_blank" class="thumbnail">
+		    		<img src="{{ site.ASSET_PATH }}images/koto/koto_screenshot_3.png" alt="" title="Koto Screenshot" />
 		    	</a>
 			</li>
 			<li class="span1">
-		    	<a href="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" target="_blank" class="thumbnail">
-		    		<img src="{{ ASSET_PATH }}tibfib/images/koto_screenshot_4.png" alt="" title="Koto Screenshot" />
+		    	<a href="{{ site.ASSET_PATH }}images/koto/koto_screenshot_4.png" target="_blank" class="thumbnail">
+		    		<img src="{{ site.ASSET_PATH }}images/koto/koto_screenshot_4.png" alt="" title="Koto Screenshot" />
 		    	</a>
 			</li>
 		</ul>

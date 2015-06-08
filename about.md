@@ -3,7 +3,6 @@ layout: default
 title: About
 tagline: 
 ---
-{% include JB/setup %}
 
 <div class="row">
 
@@ -28,28 +27,28 @@ tagline:
 		<li>
 			<a class="block" href="mailto:{{ site.author.email }}" target="_blank">
 				<div class="well well-small">
-					<img class="social-icon" src="{{ ASSET_PATH }}tibfib/images/email.png" /><span class="more-label"><strong>Email</strong> <span class="muted">at will@tibfib.com</span></span>
+					<img class="social-icon" src="{{ site.ASSET_PATH }}images/email.png" /><span class="more-label"><strong>Email</strong> <span class="muted">at will@tibfib.com</span></span>
 				</div>
 			</a>
 		</li>
 		<li>
 			<a class="block" href="http://github.com/{{ site.author.github }}" target="_blank">
 				<div class="well well-small">
-					<img class="social-icon" src="{{ ASSET_PATH }}tibfib/images/github.png" /><span class="more-label"><strong>Github</strong> <span class="muted">as Tibfib</span></span>
+					<img class="social-icon" src="{{ site.ASSET_PATH }}images/github.png" /><span class="more-label"><strong>Github</strong> <span class="muted">as Tibfib</span></span>
 				</div>
 			</a>
 		</li>
 		<li>
 			<a class="block" href="http://twitter.com/{{ site.author.twitter }}" target="_blank" title="@{{ site.author.twitter }}">
 				<div class="well well-small">
-					<img class="social-icon" src="{{ ASSET_PATH }}tibfib/images/twitter.png" /><span class="more-label"><strong>Twitter</strong> <span class="muted">as @Tibfib</span></span>
+					<img class="social-icon" src="{{ site.ASSET_PATH }}images/twitter.png" /><span class="more-label"><strong>Twitter</strong> <span class="muted">as @Tibfib</span></span>
 				</div>
 			</a>
 		</li>
 		<li>
 			<a class="block" href="{{ BASE_PATH }}atom.xml" target="_blank">
 				<div class="well well-small">
-					<img class="social-icon" src="{{ ASSET_PATH }}tibfib/images/rss.png" /><span class="more-label"><strong>RSS</strong> <span class="muted">for tibfib.com</span></span>
+					<img class="social-icon" src="{{ site.ASSET_PATH }}images/rss.png" /><span class="more-label"><strong>RSS</strong> <span class="muted">for tibfib.com</span></span>
 				</div>
 			</a>
 		</li>
