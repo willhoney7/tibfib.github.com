@@ -1,42 +1,74 @@
 ---
-layout: page
+layout: default
 title: Projects
-tagline: 
+permalink: /projects/
+navbar: true
 ---
 
-
-<div>  	
-	{% for page in site.pages %}
-	  	{% if page.project %}
-			<a class="block" href="{{ BASE_PATH }}{{ page.url }}">
-				<div class="well">
-					<div class="hidden-phone pull-left">
-						<img class="block-icon" src='{{ site.ASSET_PATH }}{{ page.icon }}'/>
-					</div>
-					<div >
-						<h2>{{ page.title }} <small>{{ page.tagline }}</small></h2>
-						<p>{{ page.description }}</p>
-					</div>
-				</div>
-			</a>
-		{% endif %}
-	{% endfor %}
-</div>
-
 <div class="page-header">
-<h1>Contributions</h1>
+	<h1>Websites</h1>
 </div>
 
-{% for page in site.pages %}
-  	{% if page.contribution %}
-<div class="block block-small">
-	<div class="well well-small">
-		<h2>{{ page.title }} <small>{{ page.tagline }}</small></h2>
-		<div>
-			<img class="pull-left pad-right" src='{{ site.ASSET_PATH }}{{ page.icon }}'/>
-			{{ page.content }}
+<div class="projects">
+	<div class="row">
+		<div class="col-md-12">
+			{% for project in site.data.projects %}
+				{% if project.type == "website" %}
+					<a class="block {{project.class}}" target="_blank" href="{{project.url}}">
+						<div class="well well-sm">
+							<div class="block-icon pull-left"></div>
+							<div class="block-content">
+								<h2>{{ project.title }} <small>{{ project.tagline }}</small></h2>
+								<p>{{ project.description }}</p>
+							</div>
+						</div>
+					</a>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+
+	<h1>Applications</h1>
+	<hr/>
+
+	<div class="row">
+		<div class="col-md-12">
+			{% for project in site.data.projects %}
+				{% if project.type == "application" %}
+					<a class="block {{project.class}}" href="{{ project.url }}">
+						<div class="well well-sm">
+							<div class="block-icon pull-left"></div>
+							<div class="block-content">
+								<h2>{{ project.title }} <small>{{ project.tagline }}</small></h2>
+								<p>{{ project.description }}</p>
+							</div>
+						</div>
+					</a>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+
+	<h1>Contributions</h1>
+	<hr/>
+
+	<div class="row">
+		<div class="col-md-12">
+			{% for project in site.data.projects %}
+				{% if project.type == "contribution" %}
+					<div class="block {{project.class}}">
+						<div class="well well-sm">
+							<div class="block-icon pull-left"></div>
+							<div class="block-content">
+								<h2>{{ project.title }} <small>{{ project.tagline }}</small></h2>
+								<p>{{project.description}}</p>
+							</div>
+						</div>
+					</div>
+				{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 </div>
-	{% endif %}
-{% endfor %}

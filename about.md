@@ -1,58 +1,41 @@
 ---
 layout: default
 title: About
-tagline: 
+permalink: /about/
+navbar: true
 ---
 
 <div class="row">
+    <div class="col-md-8">
 
-<div class="span8">
-	<div class="page-header">
-	  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-	</div>
+        <header class="page-header">
+          <h1 class="post-title">{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+        </header>
 
-	<p>
-		Hey, my name is Will Honey, and I'm a developer!<br/><br/> 
-		I started coding with Palm's webOS and have been involved with many projects for that platform. Lately, I've been branching out to other mobile platforms and the web.<br/><br/>
-		I'm also a student at Brigham Young University studying Computer Science.<br/><br/>
-		If you have any project ideas or jobs, I'd love to hear them.<br/><br/>
-		<h4>About the Site</h4>
-		This site was built using <a href="https://github.com/mojombo/jekyll">Jekyll</a>, <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a>, and <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Analytics are provided by <a href="http://getclicky.com">GetClicky.com</a>. The site is hosted by <a href="http://pages.github.com">Github Pages</a>.
-	</p>
-</div>
+        <article class="page-content">
+            <p>
+                Hey, my name is Will Honey, and I'm a developer! I grew up in Manhattan, Kansas and I'm now living in Utah as I attend Brigham Young University for my bachelor's degree in Computer Science.<br/><br/>
+                I started coding with (then) Palm's webOS and now I'm doing web development!<br/><br/>
+                Feel free to get in contact if you have any questions, comments, or project ideas.<br/><br/>
+                <h4>About this Site</h4>
+                This site was built using <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. <!--Analytics are provided by <a href="http://getclicky.com">GetClicky.com</a>.--> The site is hosted by Github pages.
 
-<div class="span4">
-	<h1 class="muted">More</h1>
-	<ul class="nav">
-		<li>
-			<a class="block" href="mailto:{{ site.author.email }}" target="_blank">
-				<div class="well well-small">
-					<img class="social-icon" src="{{ site.ASSET_PATH }}images/email.png" /><span class="more-label"><strong>Email</strong> <span class="muted">at will@tibfib.com</span></span>
+                <!-- <a href="https://www.linode.com/?r=0d87331d03214dee5bd226cebd2bc4cb983afbc5" target="_blank">Linode</a> (which I highly recommend). -->
+            </p>
+        </article>
+    </div>
+
+    <div class="col-md-4">
+        <div class="side-header">
+    	   <h1 class="muted">More</h1>
+        </div>
+        {% for link in site.data.links %}
+			<a class="block" href="{{ link.url }}" target="_blank" title="{{ link.title }}">
+				<div class="well well-sm">
+					<img class="social-icon" src="{{ link.img }}" /><span class="get-in-contact-label">{{ link.label }}
 				</div>
 			</a>
-		</li>
-		<li>
-			<a class="block" href="http://github.com/{{ site.author.github }}" target="_blank">
-				<div class="well well-small">
-					<img class="social-icon" src="{{ site.ASSET_PATH }}images/github.png" /><span class="more-label"><strong>Github</strong> <span class="muted">as Tibfib</span></span>
-				</div>
-			</a>
-		</li>
-		<li>
-			<a class="block" href="http://twitter.com/{{ site.author.twitter }}" target="_blank" title="@{{ site.author.twitter }}">
-				<div class="well well-small">
-					<img class="social-icon" src="{{ site.ASSET_PATH }}images/twitter.png" /><span class="more-label"><strong>Twitter</strong> <span class="muted">as @Tibfib</span></span>
-				</div>
-			</a>
-		</li>
-		<li>
-			<a class="block" href="{{ BASE_PATH }}atom.xml" target="_blank">
-				<div class="well well-small">
-					<img class="social-icon" src="{{ site.ASSET_PATH }}images/rss.png" /><span class="more-label"><strong>RSS</strong> <span class="muted">for tibfib.com</span></span>
-				</div>
-			</a>
-		</li>
-	</ul>	
-</div>
 
+        {% endfor %}
+    </div>
 </div>

@@ -1,7 +1,6 @@
 ---
 layout: page
 title : Archive
-group: navigation
 ---
 
 {% for post in site.posts %}
@@ -17,9 +16,9 @@ group: navigation
 	    {% endif %}
 
 	{% endunless %}
-  	
-  	<a class="block" href="{{ BASE_PATH }}{{ post.url }}">
-		<div class="well well-small">
+
+  	<a class="block" href="{{ post.url | prepend: site.baseurl }}">
+		<div class="well well-sm">
     		{{ post.date | date: "%B %d"}} - <strong>{{ post.title}}</strong>
     	</div>
 	</a>

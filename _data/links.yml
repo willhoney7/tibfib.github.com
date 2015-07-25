@@ -1,0 +1,19 @@
+-   title: Email
+    url: mailto:will@tibfib.com
+    img: /assets/images/email.png
+    label: <strong>Email</strong> <span class="muted">at will@tibfib.com</span></span>
+
+-   title: Github
+    url: http://github.com/tibfib
+    img: /assets/images/github.png
+    label: <strong>Github</strong> <span class="muted">as Tibfib</span></span>
+
+-   title: Twitter
+    url: http://twitter.com/tibfib
+    img: /assets/images/twitter.png
+    label: <strong>Twitter</strong> <span class="muted">as @Tibfib</span></span>
+
+-   title: RSS
+    url: /feed.xml
+    img: /assets/images/rss.png
+    label: <strong>RSS</strong> <span class="muted">for tibfib.com</span></span>

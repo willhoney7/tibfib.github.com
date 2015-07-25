@@ -1,0 +1,14 @@
+<hr/>
+
+<footer>
+    <div class="footer">
+        <div class="pull-left">&copy; Will Honey {{ site.time | date: '%Y' }}</div>
+        <div class="pull-right">
+            {% for link in site.data.links %}
+                <a class="footer-link" href="{{ link.url }}" target="_blank" title="{{ link.title }}">
+                    <img class="footer-icon" src="{{ link.img }}" />
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</footer>

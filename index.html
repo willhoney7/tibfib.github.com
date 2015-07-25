@@ -1,65 +1,63 @@
 ---
 layout: default
 title: Blog
-tagline:
+navbar: true
 ---
 
-<div class="row-fluid">
-		
-	<div class="span8">
-		{% for post in paginator.posts %}
-			<blockquote>
-				<div class="page-header">
-					<h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%B %d, %Y" }}</small></h1>
-				</div>
-				<p>{{ post.content }}</p>
-			</blockquote>
-		{% endfor %}
-	  
-		<ul class="pager">
-			{% if paginator.previous_page %}
-			  	<li class="previous">
-			  		{% if paginator.previous_page == 1 %}
-			    		<a href="/">&larr; Newer</a>
-			    	{% else %}
-			    		<a href="/page{{paginator.previous_page}}">&larr; Newer</a>
-			   		{% endif %}
-			  	</li>
-			{% else %}
-				<li class="previous disabled">
-				    <a href="#">&larr; Newer</a>
-				</li>
-			{% endif %}
+<div class="row blog">
+    <div class="col-md-8">
+        {% for post in paginator.posts %}
+        <blockquote class="blog-post">
+            <div class="page-header">
+                <h1>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <small>{{ post.date | date: "%B %d, %Y" }}</small>
+                </h1>
+            </div>
+            {{ post.content }}
+        </blockquote>
+        {% endfor %}
 
-			{% if paginator.next_page %}
-				<li class="next">
-			    	<a href="/page{{paginator.next_page}}">Older &rarr;</a>
-			  	</li>
-			{% else %}
-			  <li class="next disabled">
-			   <a href="#">Older &rarr;</a>
-			  </li>
-			{% endif %}	   
-		</ul>
-	</div>
-
-	<div class="span4">
-		<h1 class="muted">Projects</h1>
-			{% for page in site.pages %}
-			  	{% if page.project %}
-			  	<a class="block-project {{ page.class }}" href="{{ BASE_PATH }}{{ page.url }}">
-					<img class='block-project-icon' src='{{ site.ASSET_PATH }}{{ page.icon }}'/>
-					<div class='block-project-text' >
-						{{ page.title}}
-					</div>
-				</a>  
-				{% endif %}
+        <ul class="pager">
+            {% if paginator.previous_page %}
+            <li class="previous">
+                {% if paginator.previous_page == 1 %}
+                <a href="/">&larr; Newer</a> {% else %}
+                <a href="/page{{paginator.previous_page}}">&larr; Newer</a> {% endif %}
+            </li>
+            {% else %}
+            <li class="previous disabled">
+                <a href="#">&larr; Newer</a>
+            </li>
+            {% endif %} {% if paginator.next_page %}
+            <li class="next">
+                <a href="/page{{paginator.next_page}}">Older &rarr;</a>
+            </li>
+            {% else %}
+            <li class="next disabled">
+                <a href="#">Older &rarr;</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="side-header">
+            <h1 class="muted">Projects</h1>
+        </div>
+			{% for project in site.data.projects %}
+                {% if project.url %}
+                    <a class="block-project {{project.class}}" {% if project.type=="website" %} target="_blank" {% endif %} href="{{ project.url }}">
+                        <div class='block-project-icon'></div>
+                        <div class='block-project-text'>
+                            {{ project.title}}
+                        </div>
+                    </a>
+                {% endif %}
 			{% endfor %}
 		<ul class="pager">
 			<li class="next">
-				<a href="{{ site.BASE_PATH }}projects.html">Projects &rarr;</a>
+				<a href="/projects">Projects &rarr;</a>
 			</li>
-		</ul>	
-    </div><!--/span-->
-
-</div><!--/row-->
+		</ul>
+    </div>
+</div>

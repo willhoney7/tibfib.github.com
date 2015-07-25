@@ -1,7 +1,9 @@
 ---
 layout: post
-category : life
-tags :
+
+title: See You in Two
+date: 2013-06-24 16:00:00
+tags : [ 'life' ]
 ---
 
 It's time for my second blog post!<br/><br/>
