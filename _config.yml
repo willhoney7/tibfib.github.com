@@ -4,7 +4,8 @@ title: Tibfib.com
 description: > # this means to ignore newlines until "baseurl:"
   The is the website of Will Honey (Tibfib) who is a web developer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://tibfib.com" # the base hostname & protocol for your site
+url: "https://tibfib.com" # the base hostname & protocol for your site
+production_url: "https://tibfib.com"
 asset_path: /assets/
 permalink: pretty
 
@@ -18,3 +19,4 @@ author :
 paginate: 5
 # Build settings
 markdown: kramdown
+plugins: [jekyll-paginate]
