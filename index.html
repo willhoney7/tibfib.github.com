@@ -42,22 +42,17 @@ navbar: true
     </div>
     <div class="col-md-4">
         <div class="side-header">
-            <h1 class="muted">Projects</h1>
+            <h1 class="muted"><a href="/projects">Projects</a></h1>
         </div>
-			{% for project in site.data.projects %}
-                {% if project.url %}
-                    <a class="block-project {{project.class}}" {% if project.type=="website" %} target="_blank" {% endif %} href="{{ project.url }}">
-                        <div class='block-project-icon'></div>
-                        <div class='block-project-text'>
-                            {{ project.title}}
-                        </div>
-                    </a>
-                {% endif %}
-			{% endfor %}
-		<ul class="pager">
-			<li class="next">
-				<a href="/projects">Projects &rarr;</a>
-			</li>
-		</ul>
+		{% for project in site.data.projects %}
+            {% if project.url %}
+                <a class="block-project {{project.class}}" {% if project.type=="website" %} target="_blank" {% endif %} href="{{ project.url }}">
+                    <div class='block-project-icon'></div>
+                    <div class='block-project-text'>
+                        {{ project.title}}
+                    </div>
+                </a>
+            {% endif %}
+		{% endfor %}
     </div>
 </div>

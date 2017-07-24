@@ -1,3 +1,17 @@
+- title: Orem Ultimate
+  url: https://oremultimate.com
+  class: oremultimate
+  tagline:
+  description: A recreational sports league website supporting registration, team assignments, scheduling and more. Built using Vue, Nuxt, Express, and Mongo DB.
+  type: website
+
+- title: Alan Honey Photography
+  url: https://alanhoneyphotography.com
+  class: alanhoneyphotography
+  tagline:
+  description: A simple, elegant, responsive photography website.
+  type: website
+
 - title: Koto Player
   tagline: for webOS
   description: A clean, beautiful, open-source Music Player for webOS phones.
@@ -17,20 +31,3 @@
   type: application
   page: true
   url: /projects/nomnomnom
-
-- title: Spaz HD
-  tagline: for webOS
-  class: spaz
-  icon: images/spaz/spaz_icon.png
-  type: contribution
-  description: >
-      Spaz HD is a microblogging client supporting Twitter, Identi.ca, and Status.net. It is built using <a href="http://enyojs.com" title="enyojs.com">Enyo (v1)</a> for the HP Touchpad. The app is open-source and has seen lots of work from various people. </p>
-      <a href="https://github.com/spazproject/Spaz-Enyo" target="_blank" alt="Spaz HD on Github"><button class="btn btn-default">View Source</button></a>
-      <a href="http://getspaz.com" target="_blank" class="btn"><button class="btn btn-default">Go to getspaz.com</button></a>
-
-- title: Alan Honey Photography
-  url: http://alanhoneyphotography.com
-  class: alanhoneyphotography
-  tagline:
-  description: Built from scratch, responsive photography website.
-  type: website

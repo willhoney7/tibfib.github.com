@@ -16,5 +16,6 @@
     "bugs": {
         "url": "https://github.com/Tibfib/tibfib.github.com/issues"
     },
-    "homepage": "https://tibfib.com"
+    "homepage": "https://tibfib.com",
+    "dependencies": {}
 }
